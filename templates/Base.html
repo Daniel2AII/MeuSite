@@ -16,7 +16,11 @@
     <script type="text/javascript" src="{{ url_for('static', filename='_js/_JsFormD.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='_js/_JsFormP.js') }}"></script>
 
+    <title> {% block title %} {% endblock title %} </title>
 </head>
+
+    {% block content %}
+    {% endblock content %}
 
 <body>
     
