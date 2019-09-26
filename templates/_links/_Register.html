@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="../_css/_SiteRegister.css">
+
+		<title>Register - Friendly Talk</title>
+	</head>
+
+	<body>
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+  			<li class="nav-item">
+   				<a class="nav-link" id="home-tab" data-toggle="tab" href="../Index.html" role="tab" aria-controls="home" aria-selected="true"><b>Home</b></a>
+ 			</li>
+  			<li class="nav-item">
+  		 		<a class="nav-link active" id="profile-tab" data-toggle="tab" href="#_Register" role="tab" aria-controls="profile" aria-selected="false"><b>Register</b></a>
+ 		 	</li>
+ 			<li class="nav-item">
+   		 		<a class="nav-link" id="contact-tab" data-toggle="tab" href="_About.html" role="tab" aria-controls="contact" aria-selected="false"><b>About</b></a>
+  			</li>
+		</ul>
+
+		<div class="tab-content" id="myTabContent">
+  		<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+ 		 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+		  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+		</div>
+
+		<div id="div01">
+		<h3 id="t1">LOGIN:</h3> <br/> 
+
+		<form name="form" method="post" onsubmit="validar();">
+
+			<table border="1" align="center" bgcolor="#c5dbff">
+				<tr class="tr">
+					<td class="tb1" class="gp1"><b>USUÁRIO:</b></td>
+					<td class="tb1"><input type="text" name="nome" id="nome" placeholder=""/></td>
+				</tr>
+
+				<tr class="tr">
+					<td  class="tb1" class="gp1"><b>SENHA:</b></td>
+					<td class="tb1"><input type="password" name="password" id="password"  step=""/></td>
+				</tr>
+
+				<tr class="tr" align="center">
+					<th  class="tb1" colspan="2"><input type="submit" name="submit" id="submit" align="center" class="btn btn-dark" value="Enter"></th>
+				</tr>
+
+			</table>
+
+		</form>
+		</div>
+
+			<div id="footer"> <br/> <hr/> 
+				<h3 class="font">Contatos</h3> <br/> 
+
+				<table>
+
+				<tr class="tb2"> <th class="tb2" class="space"><h3 class="underline"><b>Instituição</b></h3></th>
+					 <th  class="tb2" class="space"><h3 class="underline"><b>Participantes</b></th></h3></tr>
+
+				<tr class="tb2"><th class="tb2"><h4 class="underline"><b>Endereço:</b></h4></th>
+					<td>Projeto realizado pelos dicentes:</td></tr>
+
+				<tr class="tb2"><td class="tb2">Zona Rural – Distrito de Ceraíma</td>
+					<td class="tb2"> <a href="" class="link">Daniel Alves Cruz</a> </td></tr>
+				
+				<tr class="tb2"><td  class="tb2" class="under">CEP 46430-000</td>
+					<td  class="tb2" class="under"> <a href="" class="link">Gabriel Soares Rocha</a> </td> </tr>
+
+				<tr class="tb2"><th class="tb2"><h4 class="underline"><b>Contato:</b></h4></th>
+				 	<th class="tb2"><h4 class="underline"><b>Docente responsável:</b></th></h4></tr>
+
+				<tr class="tb2"><td class="tb2"><a href="" class="link"> Roberto Carlos Santana Lima (diretor-geral)</a></td>
+					<td class="tb2"> <a href=""  class="link">Antonio Queiroz da Silva Neto</a> </td> </tr>
+				 
+				<tr></tr>
+
+				</table>
+			</div>		
+
+	</body>
+
+</html>
