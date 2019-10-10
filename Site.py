@@ -28,11 +28,18 @@ def FormPacient():
 
 
 class Pacient(db.Model):
-    usuario = db.Column(db.String(20), primary_key=True)
-    nome = db.Column(db.String(100), unique=True, nullable=True)
-    idade = db.Column(db.Integer, unique=True, nullable=False)
-    email = db.Column(db.String(100), unique=True, nullable=False)
-    senha = db.Column(db.Integer, unique=True, nullable=False)
+    usuarioP = db.Column(db.String(20), primary_key=True)
+    nomeP = db.Column(db.String(100), unique=True, nullable=True)
+    idadeP = db.Column(db.Integer, unique=True, nullable=False)
+    emailP = db.Column(db.String(100), unique=True, nullable=False)
+    senhaP = db.Column(db.Integer, unique=True, nullable=False)
+
+class Doctor(db.Model):
+    usuarioD = db.Column(db.String(20), primary_key=True)
+    nomeD = db.Column(db.String(100), unique=True, nullable=True)
+    idadeD = db.Column(db.Integer, unique=True, nullable=False)
+    emailD = db.Column(db.String(100), unique=True, nullable=False)
+    senhaD = db.Column(db.Integer, unique=True, nullable=False)
 
 
 if __name__ == "__main__":
