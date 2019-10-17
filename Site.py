@@ -34,12 +34,18 @@ class Pacient(db.Model):
     emailP = db.Column(db.String(100), unique=True, nullable=False)
     senhaP = db.Column(db.Integer, unique=True, nullable=False)
 
+def __repr__(self):
+    return '<Pacient %r>' % self.usuarioP
+
 class Doctor(db.Model):
     usuarioD = db.Column(db.String(20), primary_key=True)
     nomeD = db.Column(db.String(100), unique=True, nullable=True)
     idadeD = db.Column(db.Integer, unique=True, nullable=False)
     emailD = db.Column(db.String(100), unique=True, nullable=False)
     senhaD = db.Column(db.Integer, unique=True, nullable=False)
+
+def __repr__(self):
+    return '<Doctor %r>' % self.usuarioD
 
 
 if __name__ == "__main__":
