@@ -1,8 +1,11 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
+from forms import FormDoctor
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Banco_Usuarios.db'
+app.config['SECRET_KEY'] = '2f15588715f5012b4d63e76a1a47e357'
+
 db = SQLAlchemy(app)
 
 
@@ -30,9 +33,7 @@ def FormPacient():
 class Pacient(db.Model):
     usuarioP = db.Column(db.String(20), primary_key=True)
     nomeP = db.Column(db.String(100), unique=True, nullable=True)
-    idadeP = db.Column(db.Integer, unique=True, nullable=False)
-    emailP = db.Column(db.String(100), unique=True, nullable=False)
-    senhaP = db.Column(db.Integer, unique=True, nullable=False)
+    idade = db.Column(db.Integer, unique=True, nullable=False)
 
 def __repr__(self):
     return '<Pacient %r>' % self.usuarioP
@@ -40,9 +41,6 @@ def __repr__(self):
 class Doctor(db.Model):
     usuarioD = db.Column(db.String(20), primary_key=True)
     nomeD = db.Column(db.String(100), unique=True, nullable=True)
-    idadeD = db.Column(db.Integer, unique=True, nullable=False)
-    emailD = db.Column(db.String(100), unique=True, nullable=False)
-    senhaD = db.Column(db.Integer, unique=True, nullable=False)
 
 def __repr__(self):
     return '<Doctor %r>' % self.usuarioD
