@@ -3,3 +3,6 @@
 #372a05
 __pycache__
 https://play.google.com/books/reader?id=XWaRDwAAQBAJ&hl=pt&pg=GBS.PT53.w.4
+
+.env
+.idea/
