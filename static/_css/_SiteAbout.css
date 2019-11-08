@@ -54,6 +54,7 @@ p{
 	text-decoration: underline;
 }
  .font{
+    text-align: left;
  	font-family: aromaB;
  }
 
@@ -74,4 +75,8 @@ p{
 
  .link{
  	color: #0080FF;
+ }
+
+ #aln{
+    text-align: justify;
  }
