@@ -12,9 +12,9 @@ def Register():
     #form = FormDoctor()
     #if form.validate_on_submit():
     #   user = Doctor()
-    #  user.usuarioD = form.usuarioD.data
-    # db.session.add(user)
-    #db.session.commit()
+    #   user.usuarioD = form.usuarioD.data
+    #   db.session.add(user)
+    #   db.session.commit()
 
     #form = FormPacient()
     #if form.validate_on_submit():
