@@ -42,14 +42,16 @@ a{
 	padding-left: 70px;
 }
 
-.tb2{
- 	font-size: 25px;
- 	padding-right: 200px;
- 	padding-left: 200px;
+
+.rodp{
+    font-size: 20px;
+    padding: 1px;
  	text-align: center;
  	color: #212529;
- 	text-shadow: #BDBDBD 1px -1px, #BDBDBD -1px 1px, #BDBDBD 1px 1px, #BDBDBD -1px -1px;
+ 	text-shadow: #E0FFFF 1px -1px, #E0FFFF -1px 1px, #E0FFFF 1px 1px, #E0FFFF -1px -1px;
 }
+
+
 
 .under{
  	padding-bottom: 25px;
@@ -57,7 +59,7 @@ a{
 
 .link{
  	color: #0080FF;
-}
+
 
 .underline{
 	text-decoration: underline;
