@@ -15,12 +15,3 @@ class Pacient(db.Model):
 
     def __repr__(self):
         return '<Pacient %r>' % self.usuarioP
-
-class Doctor(db.Model):
-    usuarioD = db.Column(db.String(20), primary_key=True)
-    nomeD = db.Column(db.String(100), unique=True, nullable=True)
-    e_mailD = db.Column(db.String(100), unique=True nullable=False)
-    senhaD = db.Column(db.String(100), unique=True, nullable=False)
-
-    def __repr__(self):
-    return '<Doctor %r>' % self.usuarioD
