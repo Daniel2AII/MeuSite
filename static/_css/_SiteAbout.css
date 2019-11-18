@@ -41,6 +41,7 @@ a{
 }
 
 #div02{
+    text-align: left;
 	line-height: 15px;
 	text-shadow: #BDBDBD 1px -1px, #BDBDBD -1px 1px, #BDBDBD 1px 1px, #BDBDBD -1px -1px;
 }
@@ -53,6 +54,12 @@ p{
 .underline{
 	text-decoration: underline;
 }
+
+.underline2{
+    font-size: 30px;
+	text-decoration: underline;
+}
+
  .font{
     text-align: left;
  	font-family: aromaB;
@@ -80,3 +87,7 @@ p{
  #aln{
     text-align: justify;
  }
+
+ #lado{
+    font-size: 40px;
+     }
