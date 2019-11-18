@@ -29,10 +29,6 @@ def Register():
 def About():
     return render_template("_links/_About.html")
 
-@app.route("/form_doctor")
-def FormDoctor():
-    return render_template("_links/_FormD.html")
-
 @app.route("/form_pacient")
 def FormPacient():
     return render_template("_links/_FormP.html")
