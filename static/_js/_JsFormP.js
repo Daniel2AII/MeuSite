@@ -2,7 +2,7 @@ function validar(){
 	
 	var usuario = document.getElementById('usuario').value;
 	var idade = document.getElementById('age').value;
-	var sexo = document.getElementById('sex').value;
+	var genero = document.getElementById('sex').value;
 	var email = document.getElementById('mail').value;
 	var senha = document.getElementById('pass1').value;
 	var conf = document.getElementById('pass2').value;
@@ -19,8 +19,8 @@ function validar(){
 		return false;
 		}
 	
-	if (sexo == "") {
-		alert("!Por favor informe seu sexo!");
+	if (genero == "") {
+		alert("!Por favor informe um gênero!");
 		document.form.sex.focus();
 		return false;
 	}
@@ -44,6 +44,6 @@ function validar(){
 	}
 
 
-	alert(usuario+" "+nome+" "+sexo+" "+email);
+	alert(usuario+" "+email);
  	
 }
