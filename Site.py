@@ -11,15 +11,15 @@ def Register():
 
     #form = FormDoctor()
     #if form.validate_on_submit():
-    #   user = Doctor()
-    #   user.usuarioD = form.usuarioD.data
+    #   user = Pacient()
+    #   user.usuario = form.usuario.data
     #   db.session.add(user)
     #   db.session.commit()
 
     #form = FormPacient()
     #if form.validate_on_submit():
     #    user = Pacient()
-    #    user.usuarioP = form.usuarioP.data
+    #    user.usuario = form.usuario.data
     #    db.session.add(user)
     #    db.session.commit()
 
