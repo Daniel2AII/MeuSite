@@ -24,6 +24,7 @@ body, html{
 	color: white;
 	text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
 	width: 70%;
+	margin: 0 auto 0 auto;
 }
 
 #t1{
