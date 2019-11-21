@@ -8,21 +8,6 @@ def Index():
 
 @app.route("/register", methods=['POST', 'GET'])
 def Register():
-
-    #form = FormDoctor()
-    #if form.validate_on_submit():
-    #   user = Pacient()
-    #   user.usuario = form.usuario.data
-    #   db.session.add(user)
-    #   db.session.commit()
-
-    #form = FormPacient()
-    #if form.validate_on_submit():
-    #    user = Pacient()
-    #    user.usuario = form.usuario.data
-    #    db.session.add(user)
-    #    db.session.commit()
-
     return render_template("/_links/_Register.html")
 
 @app.route("/about")
@@ -31,6 +16,13 @@ def About():
 
 @app.route("/form_pacient")
 def FormPacient():
+    #form = FormPacient()
+    #if form.validate_on_submit():
+    #    user = Pacient()
+    #    user.usuario = form.usuario.data
+    #    db.session.add(user)
+    #    db.session.commit()
+
     return render_template("_links/_FormP.html")
 
 
