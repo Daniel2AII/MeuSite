@@ -20,21 +20,19 @@ body, html{
 }
 
 #geral {
-	background-color: white;
-	padding: 25px;
-	opacity: 0.85;
 	text-align: center;
 	font-weight: bold;
 	width: 70%;
 	margin: 0 auto 0 auto;
 }
 
-#t1{
+.titulo{
 	font-family: aromaB;
 	color:#8baad8;
 	font-size: 40px;
 	padding-top: 30px;
 	text-shadow: #190707 1px -1px, #190707 -1px 1px, #190707 1px 1px, #190707 -1px -1px;
+	text-align: center;
 }
 
 a{
@@ -72,4 +70,98 @@ a{
 #img01 {
 	width: 175px;
 	height: 175px;
+}
+
+#blockIF{
+	width: 85%;
+	margin: 0 auto 0 auto;
+	font-weight: bold;
+}
+
+#blockModalidades{
+    text-align: left;
+	line-height: 15px;
+}
+
+.background{
+	background-color: white;
+	padding: 25px;
+	opacity: 0.85;
+}
+
+p{
+	font-size: 25px;
+}
+
+tr, th, td{
+	font-size: 25px;
+	padding-right: 200px;
+	padding-left: 200px;
+	text-align: center;
+}  
+
+td, th{
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+}
+
+tr{
+	font-family: simplifica;
+	font-size: 30px;
+}
+
+.gp1{
+	text-align: right;
+}
+
+td{
+	padding: 10px;
+}
+
+.under{
+	padding-bottom: 25px;
+}
+
+.link{
+	color: #0080FF;
+}
+
+#aln{
+   text-align: justify;
+}
+
+#lado{
+   font-size: 40px;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.underline2{
+    font-size: 30px;
+	text-decoration: underline;
+}
+
+#imgIF{
+	padding-top: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button{
+	font-family: simplifica;
+	font-size: 20px;
+	text-align: center;
+}
+
+h2{
+	font-size: 40px;
+	padding-top: 30px;
+	text-align: center;
+	font-family: aromaB;
+	text-shadow: #190707 1px -1px, #190707 -1px 1px, #190707 1px 1px, #190707 -1px -1px;
 }
