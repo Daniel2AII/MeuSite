@@ -12,5 +12,8 @@ class Pacient(db.Model):
     genero = db.Column(db.String(20), unique=True, nullable=False)
     senha = db.Column(db.String(100), unique=True, nullable=False)
 
+class Resposta(db.Model):
+    
+
     def __repr__(self):
         return '<Pacient %r>' % self.usuario
