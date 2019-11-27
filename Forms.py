@@ -1,5 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BoleanField, DataRequired, Length, Email, EqualTo, DateTimeField
+from wtforms import StringField, PasswordField, SubmitField, DateTimeField
+from wtforms.validators import DataRequired, Email, Length, EqualTo
 
 class FormPacient(FlaskForm):
     username = StringField('Usuário', validators=[DataRequired(), Length(min=2, max=20)])
@@ -7,4 +8,4 @@ class FormPacient(FlaskForm):
     birthday = DateTimeField('Data de Nascimento', validators=[DataRequired()])
     genre = StringField('Gênero', validators=[DataRequired()])
     password = PasswordField('Senha', validators=[DataRequired()])
-    confirm_password = PasswordField('Repete Senha', validators[DataRequired(), EqualTo('password')])
+    confirm_password = PasswordField('Repete Senha', validators=[DataRequired(), EqualTo('password')])
