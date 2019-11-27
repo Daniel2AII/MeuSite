@@ -1,4 +1,4 @@
-from flask_sqlalchemy import SQLAlchemy
+'''from flask_sqlalchemy import SQLAlchemy
 from Site import app
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Bando_Usuarios.db'
