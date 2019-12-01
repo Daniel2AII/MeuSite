@@ -87,6 +87,8 @@ a{
 	background-color: white;
 	padding: 25px;
 	opacity: 0.85;
+	width: 85%;
+	margin: 0 auto 0 auto;
 }
 
 p{
