@@ -42,7 +42,7 @@ class Respostas(db.Model):
 def Index():
     return render_template("Index.html")
 
-@app.route("/register", methods=['POST', 'GET'])
+@app.route("/login", methods=['POST', 'GET'])
 def Register():
     return render_template("/_links/_Register.html")
 
@@ -50,7 +50,7 @@ def Register():
 def About():
     return render_template("_links/_About.html")
 
-@app.route("/form_pacient", methods=['POST', 'GET'])
+@app.route("/register", methods=['POST', 'GET'])
 def Pacient():
 
     form = FormPacient()
@@ -65,7 +65,7 @@ def Pacient():
         db.session.add(user)
         db.session.commit()
 
-    return render_template("_links/_FormP.html", form=form)
+    return render_template("_links/_Register.html", form=form)
 
 @app.route("/quiz")
 def Quiz():
