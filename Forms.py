@@ -3,12 +3,12 @@ from wtforms import StringField, PasswordField, SubmitField, DateTimeField, Bool
 from wtforms.validators import DataRequired, Email, Length, EqualTo
 
 class FormPacient(FlaskForm):
-    username = StringField('Usuário', validators=[DataRequired(), Length(min=2, max=20)])
-    email = StringField('E-mail', validators=[DataRequired(), Email()])
-    birthday = DateTimeField('Data de Nascimento', validators=[DataRequired()])
-    genre = StringField('Gênero', validators=[DataRequired()])
-    password = PasswordField('Senha', validators=[DataRequired()])
-    confirm_password = PasswordField('Repete Senha', validators=[DataRequired(), EqualTo('password')])
+    username = StringField('USUÁRIO', validators=[DataRequired(), Length(min=2, max=20)])
+    email = StringField('E-MAIL', validators=[DataRequired(), Email()])
+    age = DateTimeField('IDADE', validators=[DataRequired()])
+    genre = StringField('GÊNERO', validators=[DataRequired()])
+    password = PasswordField('SENHA', validators=[DataRequired()])
+    confirm_password = PasswordField('COMFIRMAR SENHA', validators=[DataRequired(), EqualTo('password')])
 
 class Respostas(FlaskForm):
     usuario = StringField('Usuario', validators=[DataRequired(), Length(min=5, max=50)])
