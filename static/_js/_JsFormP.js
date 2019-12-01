@@ -3,7 +3,7 @@ function validar(){
 	var usuario = document.getElementById('usuario').value;
 	var idade = document.getElementById('age').value;
 	var genero = document.getElementById('sex').value;
-	var email = document.getElementById('mail').value;
+	var email = document.getElementById('email').value;
 	var senha = document.getElementById('pass1').value;
 	var conf = document.getElementById('pass2').value;
 	
