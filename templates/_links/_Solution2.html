@@ -1,0 +1,31 @@
+{% extends 'Base.html' %}
+
+{% block title %}
+Take Care
+{% endblock title %}
+
+{% block content %}
+
+<body> <div class="page">
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		  <li class="nav-item">
+			   <a class="nav-link active" id="home-tab" data-toggle="tab" href="/" role="tab" aria-controls="home" aria-selected="true"><b>Home</b></a>
+		 </li>
+		  <li class="nav-item">
+			   <a class="nav-link" id="profile-tab" data-toggle="tab" href="/login" role="tab" aria-controls="profile" aria-selected="false"><b>Register</b></a>
+		  </li>
+		 <li class="nav-item">
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="/about" role="tab" aria-controls="contact" aria-selected="false"><b>About</b></a>
+		  </li>
+	</ul> <br/>
+
+<div class="background">
+    <h3>Nível de depressão a ser considerado: <u>Médio</u></h2> <hr/> <br/>
+    <h3>Você está diagnosticado com depressão. Seu estado não é muito preocupante e não precisa ser solucionado com meios muito radicais.</h3>
+    <h3>Como por exemplo, você pode marcar uma consulta na Clínica Escola de Psicologia da UNIFG com o contato: (77) 3451-8400. Quando for atendido, marque uma data e o local em que poderá ser realizado a consulta</h3> <hr/> <br/>
+    <h3>Se caso depois da consulta voçe perceba que houve uma alteração no seu estado emocional, <a href="/quiz">faça o questionário novamente.</a></h3>
+</div>
+
+</body>
+
+{% endblock content %}
