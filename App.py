@@ -14,6 +14,7 @@ class Pacient(db.Model):
     e_mail = db.Column(db.String(100), unique=True, nullable=False)
     genero = db.Column(db.String(20), unique=True, nullable=False)
     senha = db.Column(db.String(100), unique=True, nullable=False)
+    confirm_password = db.Column(db.String(100), unique=True, nullable=False)
     resposta_id = db.relationship('Respostas', backref='pacient', uselist=False)
 
     def __repr__(self):
@@ -55,14 +56,36 @@ def Pacient():
     form = FormPacient()
     if form.validate_on_submit():
         user = Pacient()
-        user.usuario = form.usuario.data
-        user.idade = form.idade.data
-        user.e_mail = form.e_mail.data
-        user.senha = form.senha.data
+        user.username = form.username.data
+        user.age = form.age.data
+        user.genre = form.genre.data
+        user.email = form.email.data
+        user.password = form.password.data
+        user.confirm_password = form.confirm_password.data
         db.session.add(user)
         db.session.commit()
 
     return render_template("_links/_FormP.html", form=form)
 
+@app.route("/quiz")
+def Quiz():
+    return render_template("_links/_Quiz.html")
+
+@app.route("/solution0")
+def Solution0():
+    return render_template("_links/_Solution0.html")
+
+@app.route("/solution1")
+def Solution1():
+    return render_template("_links/_Solution1.html")
+
+@app.route("/solution2")
+def Solution2():
+    return render_template("_links/_Solution2.html")
+
+@app.route("/solution3")
+def Solution3():
+    return render_template("_links/_Solution3.html")
+
 if __name__ == "__main__":
-    app.run(port=8888)
+    app.run(debug=True, port=8888)
