@@ -9,12 +9,12 @@ db = SQLAlchemy(app)
 
 
 class Pacient(db.Model):
-    usuario = db.Column(db.String(20), primary_key=True)
-    idade = db.Column(db.String(15), unique=True, nullable=False)
-    e_mail = db.Column(db.String(100), unique=True, nullable=False)
-    genero = db.Column(db.String(20), unique=True, nullable=False)
-    senha = db.Column(db.String(100), unique=True, nullable=False)
-    confirm_password = db.Column(db.String(100), unique=True, nullable=False)
+    username = db.Column(db.String(20), primary_key=True)
+    age = db.Column(db.String(15), unique=False, nullable=False)
+    genre = db.Column(db.String(20), unique=False, nullable=False)
+    email = db.Column(db.String(100), unique=True, nullable=False)
+    password = db.Column(db.String(100), unique=False, nullable=False)
+    confirm_password = db.Column(db.String(100), unique=False, nullable=False)
 
     def __repr__(self):
         return '<Pacient %r>' % self.usuario
@@ -25,15 +25,15 @@ def Index():
     return render_template("Index.html")
 
 @app.route("/login", methods=['POST', 'GET'])
-def Register():
-    return render_template("/_links/_Register.html")
+def Login():
+    return render_template("/_links/_Login.html")
 
 @app.route("/about")
 def About():
     return render_template("_links/_About.html")
 
 @app.route("/register", methods=['POST', 'GET'])
-def Pacient():
+def Register():
 
     form = FormPacient()
     if form.validate_on_submit():
