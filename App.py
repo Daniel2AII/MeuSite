@@ -93,6 +93,8 @@ def Register():
         db.session.add(user)
         db.session.commit()
 
+        return redirect(url_for("Index"))        
+
     return render_template("_links/_Register.html", form=form)
 
 @app.route("/quiz", methods=['POST', 'GET'])
