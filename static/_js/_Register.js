@@ -13,7 +13,7 @@ function validar(){
 		return false;
 	}
 
-	if (idade != "Maior de 18" && idade != "Maior de 18" ) {
+	if (idade != "Maior de 18" && idade != "Menor de 18" ) {
 		alert("!Por favor insira o campo idade com 'Maior de 18' ou 'Menor de 18'!");
 		document.form.age.focus();
 		return false;
