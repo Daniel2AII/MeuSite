@@ -1,6 +1,6 @@
 from flask import Flask, render_template, flash, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-from Forms import FormPacient
+from Forms import FormPacient, FormLoginPacient
 from flask_login import LoginManager, login_user, logout_user
 
 app = Flask(__name__)
@@ -36,14 +36,6 @@ class Pacient(db.Model):
     def get_id(self):
         return str(self.id)
 
-    def __init__(self, username, age, genre, email, password, confirm_password):
-        self.username = username
-        self.age = age
-        self.genre = genre
-        self.email = email
-        self.password = password
-        self.confirm_password = confirm_password
-
     def __repr__(self):
         return '<Usuário %r>' % self.username
 
@@ -51,22 +43,29 @@ class Pacient(db.Model):
 def load_user(id):
     return Pacient.query.filter_by(id=id).first()
 
-@app.route("/")
+@app.route("/", methods=['POST', 'GET'])
 def Index():
     return render_template("Index.html")
 
 @app.route("/login", methods=['POST', 'GET'])
 def Login():
 
-    form = FormPacient()
+    form = FormLoginPacient()
+    print('entrei aqui - tentando login..')
+    print(form.validate_on_submit())
+    print(form.username)
+    print(form.password)
     if form.validate_on_submit():
+        print('entrei aqui primeiro..')
         user = Pacient.query.filter_by(username=form.username.data).first()
         if user and user.password == form.password.data:
+            print('entrei aqui..')
             login_user(user)
-            flask.flash("Logged in.")
+            flash("Logged in.")
             return redirect(url_for("Quiz"))
         else:
-            flask.flash("Invalid login.")
+            print('entrei aqui - erro..')
+            flash("Invalid login.")
 
     return render_template("/_links/_Login.html", form=form)
 
@@ -96,23 +95,23 @@ def Register():
 
     return render_template("_links/_Register.html", form=form)
 
-@app.route("/quiz")
+@app.route("/quiz", methods=['POST', 'GET'])
 def Quiz():
     return render_template("_links/_Quiz.html")
 
-@app.route("/solution0")
+@app.route("/solution0", methods=['POST', 'GET'])
 def Solution0():
     return render_template("_links/_Solution0.html")
 
-@app.route("/solution1")
+@app.route("/solution1", methods=['POST', 'GET'])
 def Solution1():
     return render_template("_links/_Solution1.html")
 
-@app.route("/solution2")
+@app.route("/solution2", methods=['POST', 'GET'])
 def Solution2():
     return render_template("_links/_Solution2.html")
 
-@app.route("/solution3")
+@app.route("/solution3", methods=['POST', 'GET'])
 def Solution3():
     return render_template("_links/_Solution3.html")
 
