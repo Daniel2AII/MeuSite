@@ -41,7 +41,8 @@ Register - Take Care
 	<h3 class="titulo">LOGIN:</h3> <br/> 
 
 	<form name="form" method="POST" onsubmit="validar();">
-
+		{{ form.hidden_tag() }}
+		{{ form.csrf_token }}
 	  	<table border="1" align="center" bgcolor="#c5dbff">
 			<tr class="tr">
 				<td class="tb1" class="gp1"><b>{{ form.username.label }}</b></td>
