@@ -36,6 +36,14 @@ class Pacient(db.Model):
     def get_id(self):
         return str(self.id)
 
+    def __init__(self, username, age, genre, email, password, confirm_password):
+        self.username = username
+        self.age = age
+        self.genre = genre
+        self.email = email
+        self.password = password
+        self.confirm_password = confirm_password
+
     def __repr__(self):
         return '<Usuário %r>' % self.username
 
