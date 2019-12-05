@@ -7,136 +7,137 @@ Take Care
 {% block content %}
 
 <body> <div class="page">
-	<ul class="nav nav-tabs" id="myTab" role="tablist">
-		<li class="nav-item">
-		   <a class="nav-link active" id="home-tab" data-toggle="tab" href="/" role="tab" aria-controls="home" aria-selected="true"><b>Home</b></a>
-		</li>
-		<li class="nav-item">
-		   <a class="nav-link" id="profile-tab" data-toggle="tab" href="/login" role="tab" aria-controls="profile" aria-selected="false"><b>Login</b></a>
-		</li>
-		<li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="/about" role="tab" aria-controls="contact" aria-selected="false"><b>About</b></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#/quiz" role="tab" aria-controls="contact" aria-selected="false"><b>Quiz</b></a>
-		</li>
-	</ul> <br/>
-    
-        <h2 class="titulo">QUIZ</h2> <br/>
-    
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-            <tr>
-                <th colspan="3">Você se senti muito triste?</th>
-                    
-            </tr>
-            <tr>
-                <td ><input type="radio" name="resp1"> Sim </td>
-                <td> <input type="radio" name="resp1"> Não</td>
-            </tr>
-        </table> <br/>
-    
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-    
-            <tr>
-                <th colspan="3">Você tem perdido a vontade de exercitar atividades que eram comum no seu dia a dia?</th>
-            </tr>
-            <tr>
-                <td> <input type="radio" name="resp2"> Sim</td>
-                <td> <input type="radio" name="resp2"> Não</td>
-            </tr>
-        </table> <br/>
-    
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-            <tr>
-                <th colspan="3">Senta uma alteração no seu sono ultimamente?</th>
-            </tr>
-            <tr>
-                <td> <input type="radio" name="resp3"> Sim</td>
-                <td> <input type="radio" name="resp3"> Não</td>
-            </tr>
-        </table> <br/>        
+	<form method="get">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+               <a class="nav-link active" id="home-tab" data-toggle="tab" href="/" role="tab" aria-controls="home" aria-selected="true"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" id="profile-tab" data-toggle="tab" href="/login" role="tab" aria-controls="profile" aria-selected="false"><b>Login</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="/about" role="tab" aria-controls="contact" aria-selected="false"><b>About</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#/quiz" role="tab" aria-controls="contact" aria-selected="false"><b>Quiz</b></a>
+            </li>
+        </ul> <br/>
 
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-            <tr>
-                <th colspan="3">Perdeu ou ganhou peso ultimamente?</th>
-            </tr>
-            <tr>
-                <td> <input type="radio" name="resp3"> Sim</td>
-                <td> <input type="radio" name="resp3"> Não</td>
-            </tr>
-        </table> <br/>
-    
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-            <tr>
-                <th colspan="3">Seu apetite tem aumentado ou diminuido?</th>
-            </tr>
-            <tr>
-                <td> <input type="radio" name="resp4"> Sim</td>
-                <td> <input type="radio" name="resp4"> Não</td>
-            </tr>
-        </table> <br/>
-    
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-            <tr>
-                <th colspan="3">Se sente fadigado e com perda de energia?</th>
-            </tr>
-            <tr>
-                <td> <input type="radio" name="resp5"> Sim</td>
-                <td> <input type="radio" name="resp5"> Não</td>
-            </tr>
-        </table> <br/>
+            <h2 class="titulo">QUIZ</h2> <br/>
 
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-            <tr>
-                <th colspan="3">Se sente muito agitado ou lento?</th>
-            </tr>
-            <tr>
-                <td> <input type="radio" name="resp3"> Sim</td>
-                <td> <input type="radio" name="resp3"> Não</td>
-            </tr>
-        </table> <br/>
-    
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;"> 
-            <tr>
-                <th colspan="3">Se sente inútil ou culpado de algo muito frequentemente</th>
-            </tr>
-            <tr>
-                <td> <input type="radio" name="resp6"> Sim</td>
-                <td> <input type="radio" name="resp6"> Não</td>
-            </tr>
-        </table> <br/>
-    
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-            <tr>
-                <th colspan="3">Está Indeciso? Não consegue pensar ou raciocinar em algo?</th>
-                    
-            </tr>
-            <tr>
-                <td> <input type="radio" name="resp7"> Sim</td>
-                <td> <input type="radio" name="resp7"> não</td>
-            </tr>
-        </table> <br/>
-    
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-            <tr>
-                <th colspan="3">Vocẽ tem pensamentos de suicídios recorrentes?</th>
-                    
-            </tr>
-            <tr>
-                <td> <input type="radio" name="resp7"> Sim</td>
-                <td> <input type="radio" name="resp7"> Não</td>
-            </tr>
-        </table> <br/>
-    
-    
-        <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
-    
-            <tr align="center">
-                <th colspan="3"><input type="submit" name="quiz" id="quiz" align="center" class="btn btn-dark"  value="ANALISAR"></th>
-                    
-            </tr>
-    
-        </table>
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+                <tr>
+                    <th colspan="3">Você se senti muito triste?</th>
+
+                </tr>
+                <tr>
+                    <td ><input type="radio" id="resp1" name="resp1" value="true"> Sim </td>
+                    <td> <input type="radio" id="resp2" name="resp1" value="false"> Não</td>
+                </tr>
+            </table> <br/>
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+
+                <tr>
+                    <th colspan="3">Você tem perdido a vontade de exercitar atividades que eram comum no seu dia a dia?</th>
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="resp3" name="resp2" value="true"> Sim</td>
+                    <td> <input type="radio" id="resp4" name="resp2" value="false"> Não</td>
+                </tr>
+            </table> <br/>
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+                <tr>
+                    <th colspan="3">Senta uma alteração no seu sono ultimamente?</th>
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="resp5" name="resp3" value="true"> Sim</td>
+                    <td> <input type="radio" id="resp6" name="resp3" value="false"> Não</td>
+                </tr>
+            </table> <br/>
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+                <tr>
+                    <th colspan="3">Perdeu ou ganhou peso ultimamente?</th>
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="resp7" name="resp4" value="true"> Sim</td>
+                    <td> <input type="radio" id="resp8" name="resp4" value="false"> Não</td>
+                </tr>
+            </table> <br/>
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+                <tr>
+                    <th colspan="3">Seu apetite tem aumentado ou diminuido?</th>
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="resp9" name="resp5" value="true"> Sim</td>
+                    <td> <input type="radio" id="resp10" name="resp5" value="false"> Não</td>
+                </tr>
+            </table> <br/>
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+                <tr>
+                    <th colspan="3">Se sente fadigado e com perda de energia?</th>
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="resp11" name="resp6" value="true"> Sim</td>
+                    <td> <input type="radio" id="resp12" name="resp6" value="false"> Não</td>
+                </tr>
+            </table> <br/>
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+                <tr>
+                    <th colspan="3">Se sente muito agitado ou lento?</th>
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="resp13" name="resp7" value="true"> Sim</td>
+                    <td> <input type="radio" id="resp14" name="resp7" value="false"> Não</td>
+                </tr>
+            </table> <br/>
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+                <tr>
+                    <th colspan="3">Se sente inútil ou culpado de algo muito frequentemente</th>
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="resp15" name="resp8" value="true"> Sim</td>
+                    <td> <input type="radio" id="resp16" name="resp8" value="false"> Não</td>
+                </tr>
+            </table> <br/>
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+                <tr>
+                    <th colspan="3">Está Indeciso? Não consegue pensar ou raciocinar em algo?</th>
+
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="resp17" name="resp9" value="true"> Sim</td>
+                    <td> <input type="radio" id="resp18" name="resp9" value="false"> não</td>
+                </tr>
+            </table> <br/>
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+                <tr>
+                    <th colspan="3">Vocẽ tem pensamentos de suicídios recorrentes?</th>
+
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="resp19" name="resp10" value ="true"> Sim</td>
+                    <td> <input type="radio" id="resp20" name="resp10" value ="false"> Não</td>
+                </tr>
+            </table> <br/>
+
+
+            <table border="1" align="center" bgcolor="#c5dbff" style="width: 60%;">
+
+                <tr align="center">
+                    <th colspan="3"><input type="submit" onclick="analize()" name="quiz" id="quiz" align="center" class="btn btn-dark"  value="ANALISAR"></th>
+
+                </tr>
+
+            </table>
     </form>
 
 </body>

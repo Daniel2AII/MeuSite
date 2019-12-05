@@ -7,6 +7,8 @@ env
 venv
 .env
 .idea/
+__pycache__
+
 
 Clinica Escola de psicologia da UNIFG
 Secretaria de Saude do municipio de Guanambi
