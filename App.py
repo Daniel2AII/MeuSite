@@ -51,20 +51,13 @@ def Index():
 def Login():
 
     form = FormLoginPacient()
-    print('entrei aqui - tentando login..')
-    print(form.validate_on_submit())
-    print(form.username)
-    print(form.password)
     if form.validate_on_submit():
-        print('entrei aqui primeiro..')
         user = Pacient.query.filter_by(username=form.username.data).first()
         if user and user.password == form.password.data:
-            print('entrei aqui..')
             login_user(user)
             flash("Logged in.")
             return redirect(url_for("Quiz"))
         else:
-            print('entrei aqui - erro..')
             flash("Invalid login.")
 
     return render_template("/_links/_Login.html", form=form)
