@@ -9,4 +9,9 @@ class FormPacient(FlaskForm):
     email = StringField('E-MAIL', validators=[DataRequired(), Email()]) 
     password = PasswordField('SENHA', validators=[DataRequired()])
     confirm_password = PasswordField('COMFIRMAR SENHA', validators=[DataRequired(), EqualTo('password')])
-    button = SubmitField('Cadastrar')
+
+
+class FormLoginPacient(FlaskForm):
+    username = StringField('USUÁRIO', validators=[DataRequired(), Length(min=2, max=20)])
+    password = PasswordField('SENHA', validators=[DataRequired()])
+    
